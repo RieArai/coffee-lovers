@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+@import "base.css";
+@import "lightbox.css";
+
+/*-------------------------------------------------------------------------
+	loading
+/*-----------------------------------------------------------------------*/
+
+#loading {
+	width: 120px;
+	height: 120px;
+	/*display: none;*/
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -60px;
+	margin-left: -60px;
+	z-index: 100;
+	text-align: center;
+}
+
+#fade {
+	width: 100%;
+	height: 100%;
+	/*display: none;*/
+	background: #fff;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 50;
+}
+
+/*-------------------------------------------------------------------------
+	All
+/*-----------------------------------------------------------------------*/
+#all {
+	background: #fdf8e1;
+	font-size: 16px;
+	color: #481717;
+}
+
+	#all .wrap {
+		position:relative;
+		width:1200px;
+		margin:0 auto;
+	}
+
+	#all .text,
+	#all .summary {
+		text-align:justify;
+		text-justify:inter-ideograph;
+	}
+
+header {
+	width: 100%;
+	background: #261507;
+}
+
+	header .wrap {
+		color: #fff;
+		padding: 50px 0 10px 0;
+	}
+
+	header h1 {
+		float: left;
+	}
+
+	header p {
+		float: right;
+		color: #fff;
+	}
+
+	header form {
+		float: right;
+	}
+
+		header form #s {
+			padding: 10px;
+			border: none;
+			width: 200px;
+		}
+
+	header form #searchsubmit {
+		padding: 5px 10px;
+		background: #ffd600;
+		color: #000;
+		border: none;
+		font-size: 15px;
+	}
+
+	header .screen-reader-text {
+		display: none;
+	}
+
+#nav {
+	padding: 10px 0;
+	margin: 20px 0;
+}
+
+ul#nav {
+	width:830px;
+	margin: 0 auto;
+}
+
+	#nav li {
+		height: 64px;
+		display: inline-block;
+		font-size: 20px;
+		font-weight: bold;
+		text-align: left;
+		padding-top: 10px;
+		padding-left: 30px;
+		margin-right: 40px;
+		background-image: url("images/common/nav/off.png");
+		background-position: 0;
+		background-position-y: 0; 
+		background-repeat: no-repeat;
+	}
+
+	#nav li:hover {
+		background-image: url("images/common/nav/on.png");
+	}
+
+#side {
+	width: 320px;
+	margin-right: 40px;
+	float: left;
+}
+
+	body #contents {
+		width: 840px;
+		float: left;
+		margin-bottom: 50px;
+	}
+
+	body.page #contents {
+		width: 100%;
+		float: left;
+		margin-bottom: 50px;
+		background: #fff;
+		padding-top: 40px;
+		border-radius: 8px;
+	}
+
+		body.page #contents h2.ttl {
+			width: 100%;
+			height: 70px;
+			background: #ffd600;
+			text-align: center;
+			padding-top: 30px;
+		}
+
+
+h3 {
+	font-size: 22px;
+	font-weight: bold;
+	/*margin-bottom: 30px;*/
+}
+
+li {
+	list-style: none;
+}
+
+dd {
+	list-style: none;
+}
+
+footer {
+	display: inline-block;
+	background: #261507;
+	height: 30px;
+	width: 100%;
+}
+
+
+
+
+
+
+

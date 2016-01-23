@@ -1,0 +1,554 @@
+/*Theme Name: coffee-lovers
+Theme URI: http://192.168.0.23:8888/coffee-lovers/
+Description:　Webチーム課題　コーヒー部サイト
+Author: rie
+Version: 1.1*/
+
+
+@charset "UTF-8";
+@import "layout.css";
+
+/*-------------------------------------------------------------------------
+	side
+/*-----------------------------------------------------------------------*/
+
+.beans-navi {
+	background: #ffd600;
+	border-radius: 8px;
+	padding: 40px 40px 20px 40px;
+	margin-bottom: 40px;
+	text-align: center;
+	font-weight: bold;
+}
+	.meter {
+		position: relative;
+		width: 100%;
+		height: 130px;
+		z-index: 4;
+	}
+		.meter .frame{
+			position: absolute;
+			top: 0;
+			left: 50px;
+			background: url("images/frame.png") center;
+			width: 130px;
+			height: 130px;
+			z-index: 3;
+		}
+
+		.meter #bg{
+			position: absolute;
+			top: 0;
+			left: 50px;
+			background: #481717;
+			width: 130px;
+			height: 130px;
+			z-index: 2;
+		}
+
+		.meter #frame-bg{
+			position: absolute;
+			top: 0;
+			left: 50px;
+			background: #c6b896;
+			width: 130px;
+			height: 130px;
+			z-index: 1;
+		}
+
+	.beans-navi img {
+		margin-bottom: 20px;
+	}
+
+	.beans-navi p.now{
+		font-size: 22px;
+		margin-bottom: 20px;
+	}
+
+	.beans-navi ul {
+		position: relative;
+		background: #ffd600;
+		z-index: 5;
+		padding-top: 30px;
+	}
+
+	.beans-navi li {
+		color: #fff;
+		font-size: 20px;
+		width: 100%;
+		cursor: pointer;
+		padding: 20px 0;
+	}
+
+	.beans-navi .change {
+		background: #df5f24;
+		border-radius: 10px;
+	}
+
+	.beans-navi .change:hover {
+		opacity: 0.5;
+	}
+
+	.change-txt .lead {
+		font-size: 25px;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.change-txt .list {
+		margin-bottom: 30px;
+	}
+
+		.change-txt .list li {
+			background: #fcd53a;
+			width: 200px;
+			height: 170px;
+			border-radius: 200px;
+			border: 6px solid #ffeb9e;
+			text-align: center;
+			padding-top: 30px;
+			margin-right: 10px;
+			float: left;
+		}
+
+		.change-txt .list li.select {
+			background: #ec7f4c;
+			width: 200px;
+			height: 170px;
+			border-radius: 200px;
+			border: 6px solid #d54d0d;
+			text-align: center;
+			padding-top: 30px;
+			margin-right: 10px;
+			float: left;
+		}
+
+		.change-txt .list li:last-child {
+			margin-right: 0;
+		}
+
+		.change-txt .list li:hover {
+			background: #ec7f4c;
+			border: 6px solid #d54d0d;
+		}
+
+		.change-txt .list li.select {
+			color: #c00;
+		}
+
+	.change-txt .caption {
+		font-size: 90%;
+		font-weight: bold;
+		text-align: center;
+	}
+
+		.change-txt .caption a{
+			color: #c00;
+			font-weight: bold;
+		}
+
+		.beans-navi .mail a{
+			display: inline-block;
+			width: 100%;
+			padding: 20px 0;
+			color: #fff;
+			background: #58b652;
+			border-radius: 10px;
+		}
+
+.modal{
+	display:none;
+}
+
+.modalBody {
+	position: fixed;
+	z-index:1000;
+	background: #fff;
+	width:670px;
+	left:50%;
+	top:50%;
+	height: 340px;
+	padding: 40px;
+	border-radius: 10px;
+}
+
+	.modalBody .close {
+		cursor: pointer;
+		text-align: center;
+		color: #fff;
+		padding-top: 10px;
+		width: 45px;
+		height: 35px;
+		border-radius: 45px;
+		background: #4d2b13;
+		position: absolute;
+		top: -15px;
+		right: -15px;
+		opacity: 1;
+	}
+
+.modalBK{
+	position:fixed;
+	z-index:999;
+	height:100%;
+	width:100%;
+	background:#000;
+	opacity: 0.6;
+	top: 0 ;
+	left: 0;
+}
+
+		.modalBody .txt-area p {
+			font-size: 20px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+
+		.modalBody .txt-area span {
+			font-size: 120%;
+		}
+
+		.modalBody .txt-area .caption {
+			font-size: 90%;
+		}
+
+	.modalBody .space {
+		width: 93%;
+		height: 100px;
+		background: #fdf8e1;
+		border: none;
+		border-radius: 5px;
+		padding: 20px;
+		font-size: 18px;
+	}
+
+	.modalBody .submit {
+		text-align: center;
+	}
+
+		.modalBody .submit .btn a{
+			display: inline-block;
+			text-align: center;
+			background: #df5f24;
+			border-radius: 10px;
+			padding: 20px 10px;
+			color: #fff;
+			font-size: 20px;
+			font-weight: bold;
+			width: 35%;
+			margin: 0 auto;
+			border: 0;
+		}
+
+
+.bnr {
+	margin-bottom: 20px;
+}
+
+	.bnr p {
+		margin-bottom: 20px;
+	}
+
+	.bnr li {
+		display: inline-block;
+		float: left;
+		margin-bottom: 20px;
+	}
+
+	.bnr li:first-child {
+		margin-right: 20px;
+	}
+/*-------------------------------------------------------------------------
+	contents
+/*-----------------------------------------------------------------------*/
+
+.news {
+	background: #fff;
+	border-radius: 8px;
+	padding: 40px;
+	margin-bottom: 40px;
+}
+
+	.news article {
+		margin-bottom: 20px;
+	}
+
+	.news .day {
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.news p.alert {
+		color: #c00;
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+		.news .alert span {
+			padding: 3px 7px;
+			margin-right: 10px;
+			background: #c00;
+			color: #fff;
+		}
+
+.request {
+	background: #fff;
+	padding: 40px;
+	border-radius: 8px;
+}
+
+	.request .intro {
+		background: #fdf8e1;
+		border-radius: 8px;
+		padding: 40px;
+		margin-bottom: 40px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.request .intro p {
+		font-size: 18px;
+	}
+
+		.request .btn a {
+			display: inline-block;
+			text-align: center;
+			background: #4d2b13;
+			border-radius: 10px;
+			color: #fff;
+			font-size: 20px;
+			padding: 15px 60px;
+			margin-top: 15px;
+		}
+
+	.request article {
+		border:2px solid #421c1a;
+		border-radius: 8px;
+		padding: 40px;
+		margin-bottom: 30px;
+	}
+
+		.request article .post-txt {
+			font-size: 23px;
+		}
+
+		.request article .day {
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		.request article h2 {
+			font-size: 25px;
+			font-weight: bold;
+		}
+
+			.request article h2 a{
+				font-size: 25px;
+				font-weight: bold;
+				color: #6b4840;
+			}
+
+				.request .btn p a {
+					display: inline-block;
+					padding: 5px 15px;
+					margin-right: 20px;
+					float: left;
+					color: #6b4840;
+					background: #f3d95b;
+				}
+
+/*-------------------------------------------------------------------------
+	comments
+/*-----------------------------------------------------------------------*/
+
+.comments-area {
+	margin-top: 30px;
+	padding: 30px;
+	background: #fdf8e1;
+	border-radius: 10px;
+}
+
+li.comment {
+	margin-bottom: 20px;
+}
+
+	li.comment a {
+		color: #c00;
+	}
+
+		li.comment .comment-meta a {
+			color: #261507;
+			font-weight: bold;
+		}
+
+.request .category{
+	background: #ffd600;
+	padding: 3px 10px;
+	color: #261507;
+	display: inline-block;
+	border-radius: 13px;
+}
+
+h3.ttl {
+	padding-left: 35px;
+	margin-bottom: 20px;
+	background: url("images/post/comment.png") no-repeat left 50%;
+}
+h3#comments {
+	display: none;
+}
+
+.comment-author.vcard {
+	display: none;
+}
+
+	li.comment .reply a {
+		background: #261507;
+		padding: 5px 10px;
+		color: #fff;
+		display: inline-block;
+		border-radius: 5px;
+	}
+
+	#respond #commentform textarea {
+		width: 80%;
+		padding: 20px;
+		margin-bottom: 20px;
+		border: none;
+		border-radius: 5px;
+	}
+
+#respond{
+}
+
+	#respond h3 {
+		margin-bottom: 10px;
+	}
+
+	#respond #commentform input,
+	#respond #commentform label {
+		display: none;
+	}
+
+	#respond #commentform input#submit {
+		display: block;
+	}
+
+	#respond input#submit {
+		background: #261507;
+		border: none;
+		border-radius: 5px;
+		font-size: 16px;
+		padding: 5px 10px;
+		color: #fff;
+	}
+
+.reply {
+	display: inline-block;
+	float: left;
+	margin-top: 23px;
+	margin-right: 10px;
+}
+
+.counter {
+	margin-top: 20px;
+}
+
+#wp-ulike-92 {
+	display: none;
+}
+
+/*-------------------------------------------------------------------------
+	Search
+/*-----------------------------------------------------------------------*/
+
+h1.search {
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+
+	h1.search span {
+		font-weight: bold;
+		color:#c00;
+	}
+
+/*-------------------------------------------------------------------------
+	Contact
+/*-----------------------------------------------------------------------*/
+
+.post-info,
+.nocomments {
+	display: none;
+}
+
+.required-contactform7{
+	padding: 5px;
+	background: #DE8686;
+	color: #fff;
+	border-radius: 3px;
+	margin-right: 3px;
+}
+
+	.table-contactform7 th{
+		font-weight:bold;
+		display: inline-block;
+		text-align: left;
+		margin-right: 20px;
+	}
+
+		.table-contactform7 th span.mast{
+			color: #c00;
+			font-size: 90%;
+		}
+
+	.table-contactform7 tr{
+		display: inline-block;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.table-contactform7 input,
+	.table-contactform7 textarea{
+		max-width: 100%;
+		border: none;
+		border-radius: 10px;
+		background: #fdf8e1;
+		font-size: 18px;
+	}
+
+	.name input,
+	.address input{
+		width: 100%;
+		padding: 20px;
+	}
+
+	.message textarea{
+		width: 600px;
+		padding: 20px;
+		border: none;
+		border-radius: 10px;
+		background: #fdf8e1;
+	}
+
+.submit {
+	border-top: 1px #333;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.btn-success {
+	display: inline-block;
+	cursor: pointer;
+	background: #df5f24;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.btn-success:hover {
+	opacity:0.5;
+}

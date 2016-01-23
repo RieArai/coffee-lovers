@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+@import "../../../files/css/common/layout.css";
+
+#contents {
+	width: 100%;
+	background: #fff;
+	border-radius: 10px;
+}
+
+	#contents .container {
+		padding: 40px;
+	}
+
+	#contents .txt {
+		font-size: 20px;
+	}
+
+		#contents .txt p {
+			margin-bottom: 20px;
+		}
+
+		#contents .btn a {
+			display: inline-block;
+			text-align: center;
+			background: #fd5900;
+			font-size: 20px;
+			font-weight: bold;
+			color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+		}
+
+		#contents .btn a:before {
+			content:"> ";
+			color: #fff;
+		}
+
+/*------------------------------------------------------------------
+
+About
+
+------------------------------------------------------------------*/
+
+	#contents.About .txt {
+		text-align: center;
+	}
+
+		#contents.About .txt strong {
+			font-size: 130%;
+			font-weight: bold;
+		}
+
+	#contents.About .txt.point {
+		border-radius: 10px;
+		width: 100%;
+	}
+
+		#contents.About .txt.point ul {
+			background: #fdf8e1;
+			width: 80%;
+			margin: 0 auto;
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+
+		#contents.About .txt.point li {
+			float: left;
+			padding: 30px 0;
+			width: 32%;
+			text-align: center;
+		}
+
+			#contents.About .txt.point li span {
+				height: 5%;
+				font-weight: bold;
+			}
+
+	#contents.About .attend {
+		text-align: center;
+	}
+
+
+/*------------------------------------------------------------------
+
+Member
+
+------------------------------------------------------------------*/
+
+#contents.Member {
+}
+
+		#contents.Member .btn a {
+			margin-bottom: 30px;
+			background: #6fbd23;
+		}
+
+	#contents.Member .list {
+		width: 68%;
+		float: left;
+	}
+
+		#contents.Member .list li.week {
+			font-size: 25px;
+			background: #f5f5f5;
+			margin-bottom: 20px;
+			width: 100%;
+			border-radius: 10px;
+			display: inline-block;
+			font-weight: bold;
+		}
+
+			#contents.Member .list li.week .day {
+				background: #481717;
+				width: 100px;
+				float: left;
+				color: #fff;
+				border-radius: 10px 0 0 10px;
+				text-align: center;
+				margin-right: 20px;
+				padding: 10px 0;
+			}
+
+			#contents.Member .list li.week .day.today {
+				background: #c00;
+			}
+
+			#contents.Member .list li.week .staff {
+				padding: 10px 0;
+			}
+
+	#contents.Member .others {
+		width: 25%;
+		padding: 30px;
+		float: right;
+		display: inline-block;
+		background: #f5f5f5;
+		border-radius: 10px;
+	}
+
+			#contents.Member .others .ttl {
+				font-size: 20px;
+				font-weight: bold;
+			}
+
+			#contents.Member .others li {
+				float: left;
+			}
+
+/*------------------------------------------------------------------
+
+News
+
+------------------------------------------------------------------*/
+#contents.News {
+}
+
+	#contents.News .category {
+		padding: 0 40px;
+	}
+		#contents.News .category li {
+			cursor: pointer;
+			display: inline-block;
+			padding: 5px 20px;
+			border-radius: 10px;
+			background: #000;
+			float: left;
+			margin-right: 10px;
+			color: #fff;
+		}
+
+		#contents.News .category li.current {
+			background: #c00;
+			color: #fff;
+		}
+
+		#contents.News .category-list.hidden {
+			display: none;
+		}
+
+				#contents.News .btn p a {
+					display: inline-block;
+					padding: 5px 15px;
+					margin-right: 20px;
+					float: left;
+					color: #6b4840;
+					background: #f3d95b;
+				}
+
+	#contents.News .tab {
+		width: 60%;
+		float:left;
+	}
+
+	#contents.News .search {
+		float:right;
+	}
